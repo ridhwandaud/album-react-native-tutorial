@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import axios from 'axios';
-<<<<<<< HEAD
 import AlbumDetail from './AlbumDetail';
 
 class AlbumList extends Component {
@@ -18,5 +17,14 @@ class AlbumList extends Component {
 			<AlbumDetail key={album.title} album={album} />
 		);
 	}
+
+	render() {
+		return (
+			<View>
+				{this.renderAlbums()}
+			</View>
+		);
+	}
+}
 
 export default AlbumList;
