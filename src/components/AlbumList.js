@@ -19,22 +19,4 @@ class AlbumList extends Component {
 		);
 	}
 
-=======
-
-class AlbumList extends Component {
-	componentWillMount() {
-		console.log('componentWillMount in AlbumList');
-		axios.get('https://rallycoding.herokuapp.com/api/music_albums')
-		.then(response => console.log(response));
-	}
->>>>>>> bfd80eba3a496f2fa79f910395f787dd2aad1cca
-	render() {
-		return (
-			<View>
-				{this.renderAlbums()}
-			</View>
-		);
-	}
-}
-
 export default AlbumList;
